@@ -1,15 +1,13 @@
-// src/views/clinic/Patients.js
+// src/views/clinic/PatientPage.js
+import React from 'react';
 import { Card, CardHeader, CardBody, Container, Row, Col } from 'reactstrap';
-// core components
 import Header from 'components/Headers/Header.js';
 
 const PatientPage = () => {
   return (
     <>
       <Header />
-      {/* Page content */}
       <Container className='mt--7' fluid>
-        {/* Table */}
         <Row>
           <div className='col'>
             <Card className='shadow'>
@@ -18,7 +16,9 @@ const PatientPage = () => {
               </CardHeader>
               <CardBody>
                 <Row className='pasien-klinik'>
-                  <Col lg='3' md='6'></Col>
+                  <Col lg='3' md='6'>
+                    {/* Add patient content here */}
+                  </Col>
                 </Row>
               </CardBody>
             </Card>

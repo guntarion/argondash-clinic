@@ -1,24 +1,24 @@
-// src/views/clinic/Patients.js
+// src/views/clinic/AppointmentPage.js
+import React from 'react';
 import { Card, CardHeader, CardBody, Container, Row, Col } from 'reactstrap';
-// core components
 import Header from 'components/Headers/Header.js';
 
-const PatientPage = () => {
+const AppointmentPage = () => {
   return (
     <>
       <Header />
-      {/* Page content */}
       <Container className='mt--7' fluid>
-        {/* Table */}
         <Row>
           <div className='col'>
             <Card className='shadow'>
               <CardHeader className='bg-transparent'>
-                <h3 className='mb-0'>Pasien Klinik YAMR</h3>
+                <h3 className='mb-0'>Janji Temu Klinik YAMR</h3>
               </CardHeader>
               <CardBody>
-                <Row className='pasien-klinik'>
-                  <Col lg='3' md='6'></Col>
+                <Row className='janji-temu-klinik'>
+                  <Col lg='3' md='6'>
+                    {/* Add appointment content here */}
+                  </Col>
                 </Row>
               </CardBody>
             </Card>
@@ -29,4 +29,4 @@ const PatientPage = () => {
   );
 };
 
-export default PatientPage;
+export default AppointmentPage;
